@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD5240F6-6D9D-4C8B-A749-55CB7DAF4F59}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookStore</RootNamespace>
+    <AssemblyName>BookStore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionSection.cs" />
+    <Compile Include="Books.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MentalHealth.cs" />
+    <Compile Include="PoetrySection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScienceFiction.cs" />
+    <Compile Include="Sections.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city of stairs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mental Health.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neuromancer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poetry.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recommendation.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Science Fiction.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the cold storm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the hunger games.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the hunter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the walk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\اخر ليالي البشر .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\أرسس.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ارض بلا ظل .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الألعاب النفسية .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الجزار.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الخروج عن النص.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الخنساء.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الشعر العربي الفصيح.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الشعر العربي.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الصبر كان أيوب.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\الفجر الأول .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\انتريستا.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\جلسات نفسية.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\قوانين التحرر من الصراع النفسي.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لا تعتذر عما فعلت .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\مفتقد للحياة.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ممتلئ بالفراغ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\يوتوبيا.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
